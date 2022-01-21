@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { AddCategory } from "./components/AddCategory";
+import { GitGrid } from "./components/GitGrid";
 
 export const GifExpertApp = ()=> {
 
@@ -21,7 +22,10 @@ export const GifExpertApp = ()=> {
             
 
             <ol>{categories.map(category=>{
-                return <li key={category}>{category}</li>
+                return <GitGrid 
+                          key={category}
+                          category={category}
+                       />
             })}</ol>
         </div>
     )
