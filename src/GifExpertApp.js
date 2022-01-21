@@ -4,7 +4,6 @@ import { GitGrid } from "./components/GitGrid";
 
 export const GifExpertApp = ()=> {
 
-    //const categories =['One punch', 'Samurai x', 'Dragon ball'];
     const [categories, setCategories]= useState(['One punch']);
 
    /*  const handleAdd =()=>{
@@ -18,7 +17,7 @@ export const GifExpertApp = ()=> {
             <h1>GifExpertApp</h1>
             <AddCategory setCategories={setCategories}/>
             <hr/>
-            
+
             <ol>{categories.map(category=>{
                 return <GitGrid 
                           key={category}
